@@ -1,3 +1,8 @@
+@font-face {
+	font-family: "Serifa TH BT";
+	src: url(fonts/SerifaTH.TTF);
+}
+
 body {
 	/*background-image: url(images/bg1.jpg);*/
 	background-color: lightgray;
@@ -44,7 +49,7 @@ li.nav a {
 	text-decoration: none;
 	text-shadow: 0px 0px 5px black;
 	color: white;
-	font-family: 'Slabo 27px';
+	font-family: 'Serifa TH BT', serif;
 }
 
 a.card_link {
@@ -75,28 +80,10 @@ h1.header_text {
 	text-shadow: 0px 0px 5px black;
 }
 
-h1.title {
-	width: 300px;
-	display: inline-block;
-	background-color: #343434;
-	color: white;
-	border-radius: 15px;
-	text-align: center;
-	font-weight: normal;
-	position: relative;
-	padding: 10px 0px;
-}
-
-hr.title {
-	height: 3px;
-	/*display: inline-block;*/
-	background-color: #343434;
-	margin-top: 30px;
-}
-
 h5.header_text {
-	color: rgb(158,158,158);
+	color: rgb(189,189,189);
 	font-weight: normal;
+	font-family: 'Serifa TH BT', serif;
 	position: relative;
 	top: -30px;
 	text-shadow: 0px 0px 5px black;
@@ -108,7 +95,7 @@ div.content {
 }
 
 div.cards {
-	height: 350px;
+	height: 330px;
 	width: 250px;
 	float: left;
 	background-color: white;
@@ -131,11 +118,39 @@ div.cards .card_icon {
 div.cards .card_heading{
 	text-align: center;
 	text-transform: uppercase;
+	font-weight: normal;
 }
 
 div.cards .card_text{
 	text-align: center;
-	padding: 0px 30px;
+	padding: 0px 20px;
+	font-family: 'Serifa TH BT', serif;
+	font-weight: bold;
+	position: relative;
+	top: -10px;
+}
+
+h1.title {
+	width: 300px;
+	display: inline-block;
+	background-color: #343434;
+	color: white;
+	border-radius: 15px;
+	text-align: center;
+	font-weight: normal;
+	padding: 10px 0px;
+	margin: 0px;
+	position: relative;
+	top: -20px;
+	left: 35%;
+}
+
+hr.title {
+	height: 3px;
+	/*display: inline-block;*/
+	background-color: #343434;
+	position: relative;
+	top: 20px;
 }
 
 img.imgs {
@@ -169,6 +184,7 @@ div.footer1 {
 h4.footer_head {
 	color: white;
 	font-weight: normal;
+	font-family: 'Serifa TH BT', serif;
 	margin: 30px 0px 30px 0px;
 }
 
@@ -192,6 +208,7 @@ li.links:after {
 a.links {
 	color: #48CCCD;
 	text-decoration: none;
+	font-family: 'Serifa TH BT', serif;
 }
 
 span.li_style {
@@ -202,6 +219,7 @@ span.li_style {
 .footer_paragraph {
 	color: rgb(158,158,158);
 	text-decoration: none;
+	font-family: 'Serifa TH BT', serif;
 }
 
 span.tag {
@@ -213,6 +231,7 @@ input, textarea {
 	background-color: #212121;
 	border-color: #212121;
 	border-style: none;
+	font-family: 'Serifa TH BT', serif;
 }
 
 input.input, textarea {
@@ -220,7 +239,6 @@ input.input, textarea {
 	width: 220px;
 	margin-bottom: 10px;
 	padding-left: 10px;
-	font-family: serif;
 	font-size: 1em;
 }
 
@@ -231,7 +249,6 @@ input.input, textarea {
 
 #submit {
 	text-transform: uppercase;
-	font-family: serif;
 	font-weight: bold;
 }
 
@@ -249,6 +266,7 @@ div.footer2 {
 h4.copyright_text {
 	color: rgb(158,158,158);
 	font-weight: normal;
+	font-family: 'Serifa TH BT', serif;
 }
 
 #footer_float {

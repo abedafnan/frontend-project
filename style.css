@@ -4,10 +4,12 @@
 }
 
 body {
-	/*background-image: url(images/bg1.jpg);*/
+	background-image: url(images/bg.jpg);
 	background-color: lightgray;
 	background-repeat: no-repeat;
-	/*background-size: cover;*/
+	/*background-size: cover;
+	background-position: left -100px center;*/
+	background-size: 100% 100%;
 	margin: 0px;
 }
 
@@ -20,7 +22,7 @@ hr {
 div.slider {
 	height: 650px; 
 	margin-top: -10px;
-	background-color: rgba(0, 0, 0, 0.5);
+	background-color: rgba(0, 0, 0, 0.7);
 }
 
 div.header {
@@ -79,13 +81,13 @@ div.slider_content {
 #slider_arrow_right {
 	float: right;
 	height: 500px;
-	background-color: red;
+	background-color: lightblue;
 }
 
 #slider_arrow_left {
 	float: left;
 	height: 500px;
-	background-color: red;
+	background-color: lightblue;
 }
 
 p.slider_text {
@@ -115,6 +117,7 @@ p.slider_text {
 	height: 400px;
 	border-radius: 50%;
 	border: 25px solid rgb(158,158,158);
+
 }
 
 h1.header_text {
@@ -149,6 +152,7 @@ div.cards {
 	float: left;
 	background-color: white;
 	margin: 50px 12px;
+	box-shadow: 0px 0px 5px gray;
 }
 
 div.cards:hover {
@@ -215,6 +219,7 @@ img.imgs {
 	float: left;
 	border: 5px solid white;
 	margin: 26px 13px 0px 13px;
+	box-shadow: 0px 0px 5px gray;
 }
 
 img.imgs:hover {

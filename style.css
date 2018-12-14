@@ -18,7 +18,7 @@ hr {
 }
 
 div.slider {
-	height: 700px; 
+	height: 650px; 
 	margin-top: -10px;
 	background-color: rgba(0, 0, 0, 0.5);
 }
@@ -72,8 +72,8 @@ li.nav a {
 }
 
 div.slider_content {
-	position: relative;
-	top: 30px;
+	/*position: relative;
+	top: 10px;*/
 }
 
 #slider_arrow_right {
@@ -90,11 +90,11 @@ div.slider_content {
 
 p.slider_text {
 	width: 350px;
-	height: 500px;
+	height: 400px;
 	float: left;
 	color: rgb(189,189,189);
 	font-family: 'Serifa TH BT', serif;
-	margin: 70px 70px 30px 30px;
+	margin: 70px 70px 0px 30px;
 }
 
 #slider_title {
@@ -107,13 +107,14 @@ p.slider_text {
 	color: white;
 	position: relative;
 	top: 40px;
+	text-decoration: none;
 }
 
 #slider_img {
 	width: 400px;
 	height: 400px;
 	border-radius: 50%;
-	border: 20px solid rgb(158,158,158);
+	border: 25px solid rgb(158,158,158);
 }
 
 h1.header_text {

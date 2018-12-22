@@ -3,6 +3,7 @@
 	<head>
 		<title>Final Project</title>
 		<link rel="stylesheet" type="text/css" href="style.css">
+		<script type="text/javascript" src="script.js"></script>
 	</head>
 
 	<body>
@@ -12,12 +13,23 @@
 			<div class="header">
 				<div class="content">
 					<ul>
-						<li class="nav"><a href="#"> dropdown </a></li>
 						<li class="nav"><a href="#"> gallery </a></li>
 						<li class="nav"><a href="#"> portfolio </a></li>
+						<li class="nav">
+							<a href="#" class="dropdown"> dropdown </a>
+							<div class="dropdown_content">
+								<div class="dropdown_sub">
+									<ul>
+										<li><a href="#">Element 1</a></li>
+										<li><a href="#">Element 2</a></li>
+										<li><a href="#">Element 3</a></li>
+									</ul>
+								</div>
+							</div>
+						</li>
 						<li class="nav"><a href="#"> full width </a></li>
 						<li class="nav"><a href="#"> style demo </a></li>
-						<li class="active nav" id="position_fix"><a href="#"> Home </a></li>
+						<li class="active nav"><a href="#"> Home </a></li>
 					</ul>
 
 					<h1 class="header_text">The Modernist</h1>
@@ -26,13 +38,17 @@
 			</div>
 			<div class="slider_content">
 				<div class="content">
-					<img src="" alt="arrow here" id="slider_arrow_left">
+					<button>
+						<img src="images/arrow_left.png" alt="arrow here" id="slider_arrow_left">
+					</button>
 					
 					<p class="slider_text"><span id="slider_title">Cursus Penati<br>Saccum nalla.</span><br>Nullam sollicitudin et est at congue. Nulla pretium mi ante, placerat tempus lacinia blandit, fringilla sed sem. Nunc ullamcorper libero arcu, at ante donec id cursus neque. Pellentesque dictum in magna id semper. Duis iculis get mi eget leo.<br><span><a href="#" id="slider_read" class="active">Read More Here »</a></span></p>
 
 					<img src="images/Layer 1.png" alt="Main Image Here" id="slider_img">
 
-					<img src="" alt="arrow here" id="slider_arrow_right">
+					<button>
+						<img src="images/arrow_right.png" alt="arrow here" id="slider_arrow_right">
+					</button>
 				</div>	
 			</div>
 		</div>
@@ -41,7 +57,7 @@
 			<div class="cards"><a class="card_link" href="#">
 				<img src="images/p1.png" alt="Not Found" class="card_icon">
 				<h1 class="card_heading">service<br>title</h1>
-			<p class="card_text">Lorem ipsum dolor sit amet, sed do eiusmod tempor et dolore magna aliqua</p>
+				<p class="card_text">Lorem ipsum dolor sit amet, sed do eiusmod tempor et dolore magna aliqua</p>
 			</a></div>
 			<div class="cards"><a class="card_link" href="#">
 				<img src="images/p4.png" alt="Not Found" class="card_icon">
@@ -67,12 +83,30 @@
 
 		<div class="images">
 			<div class="content">
-				<img src="images/i1.jpg" class="imgs">
-				<img src="images/i2.jpg" class="imgs">
-				<img src="images/i3.jpg" class="imgs">
-				<img src="images/i4.jpg" class="imgs">
-				<img src="images/i5.jpg" class="imgs">
-				<img src="images/i6.jpg" class="imgs">
+				<figure class="figures" onclick="test();">
+					<img src="images/i1.jpg" class="imgs">
+					<figcaption>Lorem Ipsum Dolor</figcaption>
+				</figure>
+				<figure class="figures position1">
+					<img src="images/i2.jpg" class="imgs">
+					<figcaption>Lorem Ipsum Dolor</figcaption>
+				</figure>
+				<figure class="figures position2">
+					<img src="images/i3.jpg" class="imgs">
+					<figcaption>Lorem Ipsum Dolor</figcaption>
+				</figure>
+				<figure class="figures">
+					<img src="images/i4.jpg" class="imgs">
+					<figcaption>Lorem Ipsum Dolor</figcaption>
+				</figure>
+				<figure class="figures position1">
+					<img src="images/i5.jpg" class="imgs">
+					<figcaption>Lorem Ipsum Dolor</figcaption>
+				</figure>
+				<figure class="figures position2">
+					<img src="images/i6.jpg" class="imgs">
+					<figcaption>Lorem Ipsum Dolor</figcaption>
+				</figure>
 			</div>
 		</div>
 
@@ -102,13 +136,13 @@
 				</div>
 				<div class="footer_content">
 					<h4 class="footer_head">Contact Us</h4>
-					<form method="post" action="">
+					<form name="contactForm" method="post" action="index.html">
 						<input class="input" type="text" name="name" placeholder="Full Name">
-						<input class="input" type="email" name="email" required placeholder="Email Address">
+						<input class="input" type="email" name="email" placeholder="Email Address">
 						<input class="input" type="text" name="subject" placeholder="Subject">
-						<textarea id="message" name="message" required placeholder="Message"></textarea>
+						<textarea id="message" name="message" placeholder="Message"></textarea>
 						<br>
-						<input type="submit" name="submit" value="Submit" id="submit" class="active">
+						<input type="submit" value="Submit" id="submit" class="active">
 					</form>
 				</div>
 			</div>
@@ -125,10 +159,11 @@
 
 
 <!-- - form validation
-- imagew slider	
-- image slider arrows
+- image slider	
+- form validation
+- **image slider arrows
 - fixed nav bar
-- drop down list
-- image captions
-- *slider spacing
+- **drop down list
+- **image captions
+- slider spacing
  -->

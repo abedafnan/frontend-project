@@ -26,11 +26,11 @@ div.slider {
 }
 
 div.header {
-	padding-top: 20px;
+	padding-top: 15px;
 	/*position: fixed;*/
 	/*right: 110px;*/
-	/*position: sticky;*/
-	top: 0;
+	/*position: sticky;
+	top: 0;*/
 	z-index: 10;
 }
 
@@ -95,6 +95,7 @@ li.nav a {
 	overflow: hidden;
 	background-color: #555;
 	border-radius: 0px 0px 10px 10px;
+	z-index: 10;
 }
 
 .dropdown_content ul {
@@ -117,40 +118,39 @@ li.active a {
 	clear: left;
 }
 
-div.slider_content {
-	/*position: relative;
-	top: 10px;*/
-}
-
-button#slider_arrow_right {
-	float: right;
+button.slider_arrow {
 	height: 30px;
-}
-
-button#slider_arrow_left {
-	background-color: lightblue;
-	float: left;
-	height: 30px;
-}
-
-button {
-	display: inline-block;
+	width: 30px;
 	background-color: Transparent;
 	border-style: none;
 }
 
+button#slider_arrow_right {
+	position: relative;
+	top: -280px;
+	float: right;
+	margin: 20px 0px 20px 20px;
+}
+
+button#slider_arrow_left {
+	position: relative;
+	top: 180px;
+	float: left;
+	margin: 20px 20px 20px 0px;
+}
+
 p.slider_text {
-	width: 350px;
+	width: 400px;
 	height: 400px;
 	float: left;
-	color: #9e9e9e;
+	color: rgb(158,158,158);
 	font-family: 'Serifa TH BT', serif;
 	margin: 100px 70px 0px 30px;
 }
 
 #slider_title {
 	color: white;
-	font-size: 3em;
+	font-size: 3.3em;
 	font-family: serif;
 	position: relative;
 	top: -20px;
@@ -165,10 +165,12 @@ p.slider_text {
 }
 
 #slider_img {
-	width: 400px;
-	height: 400px;
+	width: 420px;
+	height: 420px;
 	border-radius: 50%;
 	border: 25px solid #6b6b6b;
+	position: relative;
+	top: -10px;
 
 }
 
@@ -177,6 +179,7 @@ h1.header_text {
 	font-weight: normal;
 	text-shadow: 0px 0px 5px black;
 	padding-top: 5px;
+	margin-left: 10px;
 }
 
 h5.header_text {
@@ -186,6 +189,7 @@ h5.header_text {
 	position: relative;
 	top: -30px;
 	text-shadow: 0px 0px 5px black;
+	margin-left: 10px;
 }
 
 div.content {
@@ -204,7 +208,7 @@ div.cards {
 	width: 250px;
 	float: left;
 	background-color: white;
-	margin: 50px 12px;
+	margin: 30px 12px 50px 12px;
 	box-shadow: 0px 0px 5px gray;
 }
 
@@ -257,7 +261,7 @@ h1.title {
 	padding: 10px 15px;
 	margin: 0px;
 	position: relative;
-	top: -10px;
+	top: -15px;
 	left: 35%;
 }
 
@@ -268,7 +272,7 @@ hr.title {
 	margin-right: 10px;
 	margin-left: 10px;
 	position: relative;
-	top: 20px;
+	top: 15px;
 }
 
 .images {

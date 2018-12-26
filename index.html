@@ -36,25 +36,27 @@
 					<h5 class="header_text">Free PSD Website Template</h5>
 				</div>
 			</div>
-			<div class="slider_content">
+			<!-- <div style="background-color: blue;"> -->
 				<div class="content">
-					<button>
-						<img src="images/arrow_left.png" alt="arrow here" id="slider_arrow_left">
+					<button  class="slider_arrow" id="slider_arrow_left">
+						<img src="images/arrow_left.png" alt="arrow here">
 					</button>
+
+					<div class="slider_content">
+						<p class="slider_text"><span id="slider_title">Cursus Penati<br>Saccum nalla.</span><br>Nullam sollicitudin et est at congue. Nulla pretium mi ante, placerat tempus lacinia blandit, fringilla sed sem. Nunc ullamcorper libero arcu, at ante donec id cursus neque. Pellentesque dictum in magna id semper. Duis iculis get mi eget leo.<br><span><a href="#" id="slider_read" class="active">Read More Here »</a></span></p>
+
+						<img src="images/Layer 1.png" alt="Main Image Here" id="slider_img">
+					</div>
 					
-					<p class="slider_text"><span id="slider_title">Cursus Penati<br>Saccum nalla.</span><br>Nullam sollicitudin et est at congue. Nulla pretium mi ante, placerat tempus lacinia blandit, fringilla sed sem. Nunc ullamcorper libero arcu, at ante donec id cursus neque. Pellentesque dictum in magna id semper. Duis iculis get mi eget leo.<br><span><a href="#" id="slider_read" class="active">Read More Here »</a></span></p>
-
-					<img src="images/Layer 1.png" alt="Main Image Here" id="slider_img">
-
-					<button>
-						<img src="images/arrow_right.png" alt="arrow here" id="slider_arrow_right">
+					<button class="slider_arrow" id="slider_arrow_right">
+						<img src="images/arrow_right.png" alt="arrow here">
 					</button>
 				</div>	
-			</div>
+			<!-- </div> -->
 		</div>
 
 		<div class="content">
-			<div class="cards"><a class="card_link" href="#">
+			<div class="cards clear" style="clear: right;"><a class="card_link" href="#">
 				<img src="images/p1.png" alt="Not Found" class="card_icon">
 				<h1 class="card_heading">service<br>title</h1>
 				<p class="card_text">Lorem ipsum dolor sit amet, sed do eiusmod tempor et dolore magna aliqua</p>
@@ -136,13 +138,13 @@
 				</div>
 				<div class="footer_content">
 					<h4 class="footer_head">Contact Us</h4>
-					<form name="contactForm" method="post" action="index.html">
+					<form name="contactForm" method="post" action="" onsubmit="return validateForm()">
 						<input class="input" type="text" name="name" placeholder="Full Name">
 						<input class="input" type="email" name="email" placeholder="Email Address">
 						<input class="input" type="text" name="subject" placeholder="Subject">
 						<textarea id="message" name="message" placeholder="Message"></textarea>
 						<br>
-						<input type="submit" value="Submit" id="submit" class="active">
+						<input type="submit" value="Submit" name="submit" id="submit" class="active">
 					</form>
 				</div>
 			</div>
@@ -165,5 +167,5 @@
 - fixed nav bar
 - **drop down list
 - **image captions
-- slider spacing
+- **slider spacing
  -->

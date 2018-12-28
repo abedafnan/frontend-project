@@ -40,6 +40,35 @@ function validateForm() {
         return false; 
     } 
    
-    return true; 
-    
+    return true;   
+}
+
+var imageCounter = 1;
+var total = 5;
+var image = "";
+var folder = "images/"
+
+function slider(x) {
+	if (x > 0) {
+		imageCounter++;
+	} else {
+		imageCounter--;
+	}
+
+	if (imageCounter > total) {
+		imageCounter = 1;
+	} else if (imageCounter < 1) {
+		imageCounter = 5;
+	}
+	
+	image = document.getElementById("slider_image");
+	image.src = folder + imageCounter + (".png");
+}
+
+function slideNext() {
+	slider(1);
+}
+
+function slidePrev() {
+	slider(-1);
 }

@@ -26,8 +26,9 @@ div.slider {
 }
 
 div.header {
+	width: 100%;
 	padding-top: 15px;
-	/*position: fixed;*/
+	position: fixed;
 	/*right: 110px;*/
 	/*position: sticky;
 	top: 0;*/
@@ -118,6 +119,14 @@ li.active a {
 	clear: left;
 }
 
+.clear2 {
+	clear: right;
+}
+
+.slider_content {
+	
+}
+
 button.slider_arrow {
 	height: 30px;
 	width: 30px;
@@ -164,7 +173,7 @@ p.slider_text {
 	padding: 8px 15px;
 }
 
-#slider_img {
+.slider_img {
 	width: 420px;
 	height: 420px;
 	border-radius: 50%;
